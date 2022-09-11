@@ -9,3 +9,4 @@ module.exports = {
     "@storybook/preset-create-react-app"
   ]
 }
+//use npm start to start the program

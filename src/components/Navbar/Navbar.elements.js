@@ -61,13 +61,13 @@ export const NavMenu = styled.ul`
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         position: absolute;
         top: 80px;
         left: ${({ click }) => (click ? 0 : '-100%')};
-        opacity: 0.75;
+        opacity: 1;
         transition: all 0.5s ease;
-        background: #7a6d9e;
+        background: #101522;
     }
 
 `;

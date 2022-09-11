@@ -3,7 +3,7 @@ import { Link} from 'react-router-dom'
 import { Container, Button } from '../../globalStyles';
 import { InfoSec, InfoRow, InfoColumn, TextWrapper,TopLine, Heading, Subtitle, ImgWrapper, Img} from './InfoSection.elements'
 
-const InfoSection = ({ primary, lightBg, imgStart, lightTopLine, lightTextDesc, buttonLabel, description, headline, lightText, topLine, img, alt, start }) => {
+const InfoSection = ({ primary, lightBg, imgStart, lightTopLine, lightTextDesc, buttonLabel, description, headline, lightText, topLine, img, alt, start, link }) => {
     return (
         <>
             <InfoSec lightBg={lightBg}>
@@ -14,7 +14,7 @@ const InfoSection = ({ primary, lightBg, imgStart, lightTopLine, lightTextDesc, 
                                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                                <Link to='/join-us'>
+                                <Link to= {link}>
                                     <Button big fontBig primary={primary}>
                                         {buttonLabel}
                                     </Button>

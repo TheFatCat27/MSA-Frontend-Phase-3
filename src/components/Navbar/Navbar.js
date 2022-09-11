@@ -38,25 +38,26 @@ const Navbar = () => {
                         {click ? <FaTimes /> : <FaBars />}
                     </MobileIcon>
 
-                    <NavMenu onCLick={handleClick} click={click}>
+                    <NavMenu click={click}>
                     	<NavItem>
-                            <NavLinks to='/'>
+                            <NavLinks to='/' onClick={handleClick}>
                                 Home
                             </NavLinks>
                         </NavItem>
 
                         <NavItem>
-                            <NavLinks to='/keyboards'>
+                            <NavLinks to='/keyboards' onClick={handleClick}>
                                 Keyboards
                             </NavLinks>
                         </NavItem>
 
                         <NavItem>
-                            <NavLinks to='/general'>
+                            <NavLinks to='/general' onClick={handleClick}>
                                 General
                             </NavLinks>
                         </NavItem>
-                        <NavItemBtn>
+                        
+                        <NavItemBtn onClick={handleClick}>
                             {button ? (
                                 <NavBtnLink to="/join-us">
                                     <Button primary>JOIN US</Button>

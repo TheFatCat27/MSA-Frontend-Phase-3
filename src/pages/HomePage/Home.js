@@ -6,10 +6,10 @@ import { InfoSection } from '../../components';
 const Home = () => {
     return (
         <>
-            <InfoSection {...homeObjOne}/>
-            <InfoSection {...homeObjTwo}/>
-            <InfoSection {...homeObjThree}/>
-            <InfoSection {...homeObjFour}/>
+            <InfoSection {...homeObjOne} link='/join-us'/>
+            <InfoSection {...homeObjTwo} link='/keyboards'/>
+            <InfoSection {...homeObjThree} link='/general'/>
+            <InfoSection {...homeObjFour} link='/join-us'/>
         </>
     );
 };
